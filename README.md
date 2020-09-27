@@ -1,0 +1,39 @@
+CONNECT 4 SERVICE
+
+Tech Stack
+	spring boot 2.3.4.RELEASE
+	Mysql Database
+
+API
+	localhost:8085/game/start -> POST
+		to start the game
+
+
+	localhost:8085/game/move -> POST
+		to play a move
+
+	localhost:8085/game/moves -> GET
+		to get all moves played for the game
+
+
+Github Link - https://github.com/rayeesGmail/connect
+
+
+
+Instructions to run the project
+
+	1. Create a database in mysql server with name "connect4" or any other name.
+	2. give the database credentials in application.properties file in "src\main\resources\application.properties",
+	   change the values of following properties.
+
+		spring.datasource.url=jdbc:mysql://localhost:3306/connect4
+		spring.datasource.username=root
+		spring.datasource.password=root
+
+	2. Open Project in Eclipse OR Intellij Idea IDE and Run.
+	3. Project will create required tables.
+	4. use the above mentioned apis for testing.
+
+
+hosted on aws ec2 instance.
+    http://3.19.223.67:9090/game
